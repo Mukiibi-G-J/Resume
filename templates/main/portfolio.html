@@ -1,0 +1,174 @@
+{% load static %}
+<!-- portfolio section -->
+<section class="w-100 float-left portfolio-con padding-top" id="Portfolio">
+  <div class="container">
+    <div class="generic-title text-center">
+      <h6 class="text-white">Creative Works</h6>
+      <h2 class="mb-0 text-white">Check My Portfolio</h2>
+    </div>
+    <div id="myBtnContainer" class="text-center">
+      <button class="active active_button" onclick="filterSelection('all')">
+        All
+      </button>
+      <button class="" onclick="filterSelection('cars')">Products</button>
+      <button class="" onclick="filterSelection('animals')">Web App</button>
+      <button class="" onclick="filterSelection('fruits')">Inetraction</button>
+      <button class="" onclick="filterSelection('colors')">
+        Brand Identity
+      </button>
+    </div>
+  </div>
+</section>
+<!-- portfolio section -->
+<!-- portfolio section -->
+<section class="w-100 float-left portfolio-body-con">
+  <div class="container">
+    <div
+      class="portfolio-img-con position-relative w-100 float-left wow fadeInUp"
+    >
+      <div class="filterDiv cars position-relative">
+        <a href="#" data-toggle="modal" data-target="#modalWPWAF">
+          <div class="portfolio-img position-relative">
+            <figure>
+              <img
+                src="{% static 'assets/image/jumia-clone.png' %}"
+                alt="portfolio-img1"
+                class="img-fluid"
+              />
+            </figure>
+          </div>
+        </a>
+        <div class="portfolio-img-content text-left">
+          <div class="portfolio-img-title d-inline-block">
+            <h4>Jumia Clone</h4>
+            <p>Technology used Nextjs</p>
+          </div>
+          <a
+            href="#"
+            class="float-lg-right"
+            data-toggle="modal"
+            data-target="#modalWPWAF-icon"
+          >
+            <i
+              class="fas fa-arrow-right d-flex align-items-center justify-content-center"
+            ></i>
+          </a>
+        </div>
+      </div>
+      <div class="filterDiv colors fruits position-relative">
+        <a href="#" data-toggle="modal" data-target="#modalporfolio2">
+          <div class="portfolio-img position-relative">
+            <figure>
+              <img
+                src="{% static 'assets/image/portfolio-img2.png' %}"
+                alt="portfolio-img1"
+                class="img-fluid"
+              />
+            </figure>
+          </div>
+        </a>
+        <div class="portfolio-img-content text-left">
+          <div class="portfolio-img-title d-inline-block">
+            <h4>Furni furniture UI Design</h4>
+            <p>Dolar repellendus temporibus...</p>
+          </div>
+          <a
+            href="#"
+            class="float-lg-right"
+            data-toggle="modal"
+            data-target="#modalporfolio2-icon"
+          >
+            <i
+              class="fas fa-arrow-right d-flex align-items-center justify-content-center"
+            ></i>
+          </a>
+        </div>
+      </div>
+      <div class="filterDiv cars position-relative">
+        <a href="#" data-toggle="modal" data-target="#modalporfolio3">
+          <div class="portfolio-img position-relative">
+            <figure>
+              <img
+                src="{% static 'assets/image/semunastore.png' %}"
+                alt="portfolio-img1"
+                class="img-fluid"
+              />
+            </figure>
+          </div>
+        </a>
+        <div class="portfolio-img-content text-left">
+          <div class="portfolio-img-title d-inline-block">
+            <h4>Semun Stores</h4>
+            <p>Nextjs and Django-Rest-Framework</p>
+            >
+          </div>
+          <a
+            href="https://semuna-frontend.herokuapp.com/"
+            class="float-lg-right"
+            target="_blank"
+            ><i
+              class="fas fa-arrow-right d-flex align-items-center justify-content-center"
+            ></i
+          ></a>
+        </div>
+      </div>
+      <div class="filterDiv colors position-relative">
+        <a href="#" data-toggle="modal" data-target="#modalporfolio4">
+          <div class="portfolio-img position-relative">
+            <figure>
+              <img
+                src="{% static 'assets/image/Medium-clone.png' %}"
+                alt="portfolio-img1"
+                class="img-fluid"
+              />
+            </figure>
+          </div>
+        </a>
+        <div class="portfolio-img-content text-left">
+          <div class="portfolio-img-title d-inline-block">
+            <h4>Medium Clone</h4>
+            <p>Nextjs and Django-Rest-Framework</p>
+          </div>
+          <a
+            href="#"
+            class="float-lg-right"
+            data-toggle="modal"
+            data-target="#modalporfolio4-icon"
+            ><i
+              class="fas fa-arrow-right d-flex align-items-center justify-content-center"
+            ></i
+          ></a>
+        </div>
+      </div>
+      <div class="filterDiv cars animals position-relative">
+        <a href="#" data-toggle="modal" data-target="#modalporfolio5">
+          <div class="portfolio-img position-relative">
+            <figure>
+              <img
+                src="{% static 'assets/image/Backend-api.png' %}"
+                alt="portfolio-img1"
+                class="img-fluid"
+              />
+            </figure>
+          </div>
+        </a>
+        <div class="portfolio-img-content text-left">
+          <div class="portfolio-img-title d-inline-block">
+            <h4>Ecommerce API</h4>
+            <p>Django-Rest-Framework</p>
+          </div>
+          <a
+            href="#"
+            class="float-lg-right"
+            data-toggle="modal"
+            data-target="#modalporfolio5-icon"
+            ><i
+              class="fas fa-arrow-right d-flex align-items-center justify-content-center"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- portfolio section -->

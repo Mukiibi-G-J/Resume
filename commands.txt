@@ -1,0 +1,54 @@
+ssh root@164.90.147.216 
+ssh joseph@143.198.71.193
+
+adduser joseph
+usermod -aG sudo joseph
+pip freeze > requirements.txt
+
+//!creating an ssh key
+ssh-keygen
+--> location public ssh key /home/joseph/.ssh/id_rsa.pub
+
+Enter file in which to save the key (/home/joseph/.ssh/id_rsa): 
+
+
+//fire wall setup 
+--shows available apps
+sudo ufw app list
+sudo ufw allow openssh
+sudo ufw enable
+--shows the status of the firewall
+sudo ufw status
+
+//installation of python
+ sudo apt update 
+-->using specific version of python
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 2   (---note 2 means priority of two)
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1    (---note 1 means priority of one)
+
+//installing pip
+sudo apt-get install -y  python3-pip
+pip3 install virtualenv
+pip install gunicorn
+pip install django
+----update then allowed hosts
+ALLOWED_HOSTS = ['localhost','143.198.71.193']
+
+mv /file/path/from /file/path/to
+
+
+
+
+
+sudo ufw allow 8000
+gunicorn --bind 0.0.00.0:8000 mysite.wsgi
+
+sudo shutdown -r now
+// to reload your server
+sudo systemctl demon-reload
+
+
+
+src="{{ me.userprofile.avatar.url }}"
+
+service gunicorn restart
